@@ -19,19 +19,19 @@ marketInput.addEventListener("change", () => {
   arrayMarket.push(market);
   
   
-  elOl.innerHTML = null
+  elOl.innerHTML = null;
 
   for (let el of arrayMarket) {
     elItem = document.createElement("li");
-    elItem.style.color = 'white'
+    elItem.style.color = "white"
     elItem.textContent = el;
     elOl.append(elItem);
   }
 
-  marketInput.value = null
+  marketInput.value = null;
 })
 
-button.addEventListener('click', (e) => {
+button.addEventListener("click", () => {
   e.preventDefault()
 
   arrayMarket.pop()
